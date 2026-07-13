@@ -35,6 +35,10 @@ public class Exercise15_07 extends Application {
         StackPane pane = new StackPane();
         pane.getChildren().add(circle);
 
-        // 
+        // Create scene and set on stage
+        Scene scene = new Scene(pane, 200, 200);
+        primaryStage.setTitle("Exercise15_07");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 }
