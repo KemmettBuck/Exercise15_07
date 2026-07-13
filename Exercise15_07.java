@@ -16,9 +16,21 @@ public class Exercise15_07 extends Application {
     public void start(Stage primaryStage) {
 
         // Create circle with radius 100, default color white
-        Circle circle = new Circle(100);
+        Circle circle = new Circle(125);
         circle.setFill(Color.WHITE);
         circle.setStroke(Color.BLACK);
-        circle.setStrokeWidth(2);
+        circle.setStrokeWidth(3);
+
+        // When mouse is pressed, turn circle black
+        circle.setOnMousePressed(e -> {
+            circle.setFill(Color.BLACK);
+        });
+
+        // When mouse is released, turn white
+        circle.setOnMouseReleased(e -> {
+            circle.setFill(Color.WHITE);
+        });
+
+        // 
     }
 }
