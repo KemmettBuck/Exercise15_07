@@ -31,6 +31,10 @@ public class Exercise15_07 extends Application {
             circle.setFill(Color.WHITE);
         });
 
+        // Place circle in StackPane
+        StackPane pane = new StackPane();
+        pane.getChildren().add(circle);
+
         // 
     }
 }
